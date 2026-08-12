@@ -7,7 +7,7 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-4CBA97?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-> **Author:** Mخhamed Gad 
+> **Author:** Mohamed Gad 
 > **Contact:** [LinkedIn](https://linkedin.com/in/muhamed-gad) | [GitHub](https://github.com/Muhamed-Gad)
 
 ---

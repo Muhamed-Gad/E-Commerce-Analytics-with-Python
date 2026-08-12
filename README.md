@@ -7,7 +7,7 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-4CBA97?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-> **Author:** Mخhamed Gad   
+> **Author:** Mخhamed Gad 
 > **Contact:** [LinkedIn](https://linkedin.com/in/muhamed-gad) | [GitHub](https://github.com/Muhamed-Gad)
 
 ---
@@ -50,36 +50,34 @@ The core logic of the project is divided sequentially into 4 Jupyter Notebooks i
 ---
 
 ## 📂 Project Structure
-The repository strictly separates raw data, processed data, scripts, and outputs for maximum organization:
+The repository strictly separates raw data, processed data, scripts, and outputs for maximum organization.
 
-```text
-📦 Olist-Ecommerce-Analytics
- ┣ 📂 scripts/                # Python code and logic
- ┃ ┣ 📜 01_data_ingestion_and_profiling.ipynb
- ┃ ┣ 📜 02_cleaning_and_feature_engineering.ipynb
- ┃ ┣ 📜 03_sales_and_operations_eda.ipynb
- ┃ ┗ 📜 04_customer_rfm_segmentation.ipynb
- ┣ 📂 raw_data/               # Original Olist datasets (customers, orders, items, etc.)
- ┣ 📂 clean_data/             # Processed datasets (order_fact_clean, customer_rfm, etc.)
- ┣ 📂 tables/                 # Aggregated CSV & Excel reports for BI tools
- ┣ 📂 charts/                 # PNG visualizations generated during EDA
- ┗ 📂 docs/                   # Documentation and final project reports
-   ┗ 📜 final_project_report.md
+* **`scripts/`** - Python code and logic.
+  * `01_data_ingestion_and_profiling.ipynb`
+  * `02_cleaning_and_feature_engineering.ipynb`
+  * `03_sales_and_operations_eda.ipynb`
+  * `04_customer_rfm_segmentation.ipynb`
+* **`raw_data/`** - Original Olist datasets (customers, orders, items, etc.).
+* **`clean_data/`** - Processed datasets (`order_fact_clean`, `customer_rfm`, etc.).
+* **`tables/`** - Aggregated CSV & Excel reports for BI tools.
+* **`charts/`** - PNG visualizations generated during EDA.
+* **`docs/`** - Documentation and final project reports (`final_project_report.md`).
 
-📊 Key Findings & Results
+---
+
+## 📊 Key Findings & Results
 Based on the analysis, several critical business insights were uncovered:
-Sales Seasonality & Trends: A clear upward trend in monthly realized orders, with specific peaks indicating strong seasonality or marketing campaigns.
-Logistics Bottlenecks: While the average delivery days are within acceptable ranges, the delivery_days_distribution highlights long-tail outliers (delayed deliveries) that negatively impact customer satisfaction, especially in remote states.
-Geographic Concentration: The state of São Paulo (SP) dominates both as the primary origin of top sellers and the destination with the highest checkout volume.
-RFM Segments: The customer base is heavily skewed towards one-time buyers. However, the top-tier RFM segments contribute a disproportionately large share of the total revenue, highlighting the need for targeted retention strategies.
-Payment Behavior: Credit cards with high installment counts are the preferred payment method, strongly correlating with higher checkout values.
+1. **Sales Seasonality & Trends:** A clear upward trend in monthly realized orders, with specific peaks indicating strong seasonality or marketing campaigns.
+2. **Logistics Bottlenecks:** While the average delivery days are within acceptable ranges, the `delivery_days_distribution` highlights long-tail outliers (delayed deliveries) that negatively impact customer satisfaction, especially in remote states.
+3. **Geographic Concentration:** The state of São Paulo (SP) dominates both as the primary origin of top sellers and the destination with the highest checkout volume.
+4. **RFM Segments:** The customer base is heavily skewed towards one-time buyers. However, the top-tier RFM segments contribute a disproportionately large share of the total revenue, highlighting the need for targeted retention strategies.
+5. **Payment Behavior:** Credit cards with high installment counts are the preferred payment method, strongly correlating with higher checkout values.
 
+---
 
-💡 Advice & Tips for Users
+## 💡 Advice & Tips for Users
 If you plan to fork, use, or review this repository, please keep the following in mind:
-Path Management: The project uses Python's pathlib for dynamic path resolution. Ensure you run the notebooks from within the scripts/ directory or at the root level—the paths will adapt automatically.
-Execution Order: You must run the notebooks sequentially (01 ➔ 02 ➔ 03 ➔ 04), as subsequent notebooks depend on the .csv files generated in the clean_data/ and tables/ folders by the previous scripts.
-
-
-Environment Setup: It is recommended to create a virtual environment. You will need pandas, matplotlib, seaborn, and jupyter.
-BI Integration: The outputs in the tables/ and clean_data/ directories are perfectly structured to be imported directly into Power BI or Tableau for interactive dashboarding.
+* **Path Management:** The project uses Python's `pathlib` for dynamic path resolution. Ensure you run the notebooks from within the `scripts/` directory or at the root level—the paths will adapt automatically.
+* **Execution Order:** You **must** run the notebooks sequentially (`01` ➔ `02` ➔ `03` ➔ `04`), as subsequent notebooks depend on the `.csv` files generated in the `clean_data/` and `tables/` folders by the previous scripts.
+* **Environment Setup:** It is recommended to create a virtual environment. You will need `pandas`, `matplotlib`, `seaborn`, and `jupyter`. 
+* **BI Integration:** The outputs in the `tables/` and `clean_data/` directories are perfectly structured to be imported directly into Power BI or Tableau for interactive dashboarding.
